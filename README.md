@@ -24,3 +24,21 @@ Aplicación web simple para la gestión de contactos, desarrollada con Laravel 1
    ```bash
    git clone https://github.com/blasitowo/contact-manager.git
    cd contact-manager
+2. Instalar dependencias:
+   ```bash
+   composer install
+3. Configurar el entorno:
+   ```bash
+    cp .env.example .env
+    php artisan key:generate
+    //Edita el archivo .env con tus credenciales de base de datos.
+4. Ejecutar Migraciones:
+    ```bash
+    php artisan migrate
+5. Iniciar el servidor:
+    ```bash
+    php artisan serve
+10. Acceder a http://localhost:8000/contacts
+
+## Contribuciones
+Este proyecto fue creado con fines de portafolio. ¡Las sugerencias son bienvenidas!
